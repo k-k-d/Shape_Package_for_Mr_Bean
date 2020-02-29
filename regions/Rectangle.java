@@ -11,9 +11,10 @@ public class Rectangle extends Basic
         this.B = B;
         this.C = C;
         this.D = D;
-        if((Math.abs(A.distanceSquared(B) - C.distanceSquared(D)) < 0.01)  && (Math.abs(B.distanceSquared(C) - D.distanceSquared(A)) < 0.01) && (Math.abs(A.distanceSquared(C) - B.distanceSquared(D)) < 0.01))
+        if(!((Math.abs(A.distanceSquared(B) - C.distanceSquared(D)) < 0.01)  && (Math.abs(B.distanceSquared(C) - D.distanceSquared(A)) < 0.01) && (Math.abs(A.distanceSquared(C) - B.distanceSquared(D)) < 0.01)))
         {
-            System.err.println("The given points do not form a rectangle. Expect random behaviour");
+            System.err.println("The given points do not form a rectangle. Check and run program again");
+            System.exit(1);
         }
     }
 

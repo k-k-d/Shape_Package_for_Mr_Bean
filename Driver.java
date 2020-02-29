@@ -7,6 +7,8 @@ public class Driver
         Rectangle r1 = new Rectangle(new Point(0.0, 0.0), new Point(10.0, 0.0), new Point(10.0, 5.0), new Point(0.0, 5.0));
         Rectangle r2 = new Rectangle(new Point(0.0, 0.0), new Point(5.0, 0.0), new Point(5.0, 10.0), new Point(0.0, 10.0));
         Circle c = new Circle(new Point(0.0, 0.0), 5.0);
+        Square s = new Square(new Point(0.0, 0.0), new Point(2.0, 0.0), new Point(2.0, 2.0), new Point(0.0, 2.0));
         System.out.println(c.contains(new Point(0.0, 6.0)));
+        System.out.println(s.contains(new Point(0.0, 1.0)));
     }
 }
