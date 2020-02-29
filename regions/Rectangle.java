@@ -2,7 +2,7 @@ package regions;
 
 public class Rectangle extends Basic
 {
-    private Point A, B, C, D;
+    protected Point A, B, C, D;
 
     public Rectangle(Point A, Point B,Point C, Point D)
     {
