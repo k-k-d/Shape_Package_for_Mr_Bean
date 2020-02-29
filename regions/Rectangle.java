@@ -41,6 +41,6 @@ public class Rectangle extends Basic
     }
     public void print()
     {
-        System.out.println("Rectangle Corners\t:\tA = " + this.A.toString() + ", B = " + this.B.toString() + ", C = " + this.C.toString() + ", D = " + this.D.toString());
+        System.out.println("Rectangle\t:\tA = " + this.A.toString() + ", B = " + this.B.toString() + ", C = " + this.C.toString() + ", D = " + this.D.toString());
     }
 }

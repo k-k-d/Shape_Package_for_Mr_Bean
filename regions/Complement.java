@@ -23,7 +23,8 @@ public class Complement extends Region
     }
     public void print()
     {
-        System.out.println("Complement of the following\t:\n\t");
+        System.out.println("Complement of the following\t:");
+        System.out.print(" ");
         r.print();
     }
 }

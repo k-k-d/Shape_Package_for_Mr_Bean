@@ -10,6 +10,11 @@ public class Triangle extends Basic
         this.A = A;
         this.B = B;
         this.C = C;
+        if(Math.abs(C.subInLine(A, B)) < 0.01)
+        {
+            System.err.println("The given points do not form a rectangle. Check and run program again");
+            System.exit(1);
+        }
     }
 
     public boolean contains(Point point)
@@ -33,6 +38,6 @@ public class Triangle extends Basic
     }
     public void print()
     {
-        System.out.println("Triangle Corners\t:\tA = " + this.A.toString() + ", B = " + this.B.toString() + ", C = " + this.C.toString());
+        System.out.println("Triangle\t:\tA = " + this.A.toString() + ", B = " + this.B.toString() + ", C = " + this.C.toString());
     }
 }

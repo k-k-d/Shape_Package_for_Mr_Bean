@@ -26,10 +26,10 @@ public class Union extends Region
     }
     public void print()
     {
-        System.out.println("Union of the following \t:\n");
-        System.out.print("\t");
+        System.out.println("Union of the following \t:");
+        System.out.print("1. ");
         r1.print();
-        System.out.print("\t");
+        System.out.print("2. ");
         r2.print();
     }
 }

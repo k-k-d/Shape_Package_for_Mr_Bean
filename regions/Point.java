@@ -10,15 +10,17 @@ public class Point
         this.y = y;
     }
 
-    public void rotate(double angle)
-    {
-        this.x = (Math.cos(angle) * (this.x - Region.origin.x)) - (Math.sin(angle) * (this.y - Region.origin.y)) + Region.origin.x;
-        this.y = (Math.sin(angle) * (this.x - Region.origin.x)) + (Math.cos(angle) * (this.y - Region.origin.y)) + Region.origin.y;
-    }
     public void translate(double dx, double dy)
     {
         this.x += dx;
         this.y += dy;
+    }
+    public void rotate(double angle)
+    {
+        double x = (Math.cos(angle) * (this.x - Region.origin.x)) - (Math.sin(angle) * (this.y - Region.origin.y)) + Region.origin.x;
+        double y = (Math.sin(angle) * (this.x - Region.origin.x)) + (Math.cos(angle) * (this.y - Region.origin.y)) + Region.origin.y;
+        this.x = x;
+        this.y = y;
     }
     public double distanceSquared(Point point)
     {
