@@ -4,7 +4,7 @@ public class Rectangle extends Basic
 {
     protected Point A, B, C, D;
 
-    public Rectangle(Point A, Point B,Point C, Point D)
+    public Rectangle(Point A, Point B,Point C, Point D) //takes in vertices in either clockwise or anticlockwise order and validates
     {
         this.r = this;
         this.A = A;
@@ -18,21 +18,21 @@ public class Rectangle extends Basic
         }
     }
 
-    public boolean contains(Point point)
+    public boolean contains(Point point)    //true if for every pair of consecutive vertices, the point and the other vertices lie on the same side of the line joining the pair of vertices, else false
     {
         if(point.sameSideOfLine(A, B, C) && point.sameSideOfLine(C, A, B) && point.sameSideOfLine(A, C, D) && point.sameSideOfLine(C, D, A))
             return true;
         else
             return false;
     }
-    public void translate(double dx, double dy)
+    public void translate(double dx, double dy) //translate all three points
     {
         this.A.translate(dx, dy);
         this.B.translate(dx, dy);
         this.C.translate(dx, dy);
         this.D.translate(dx, dy);
     }
-    public void rotate(double angle)
+    public void rotate(double angle)    //rotate all three points
     {
         this.A.rotate(angle);
         this.B.rotate(angle);

@@ -2,7 +2,7 @@ package regions;
 
 public class Square extends Rectangle
 {
-    public Square(Point A, Point B,Point C, Point D)
+    public Square(Point A, Point B,Point C, Point D)    //takes in vertices in either clockwise or anticlockwise order and checks validity
     {
         super(A, B, C, D);
         this.r = this;

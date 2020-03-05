@@ -4,6 +4,7 @@ public class Driver
 {
     public static void main(String[] args)
     {
+        //create a triangle
         Triangle t = new Triangle(new Point(5.0, 0.0), new Point(-5.0, 0.0), new Point(0.0, 10.0));
         
         System.out.println("^^^^^^^^^^1. Triangle^^^^^^^^^^");
@@ -51,6 +52,7 @@ public class Driver
 
         System.out.println();
 
+        //create a rectangle
         Rectangle r = new Rectangle(new Point(0.0, 0.0), new Point(10.0, 0.0), new Point(10.0, 5.0), new Point(0.0, 5.0));
         
         System.out.println("^^^^^^^^^^2. Rectangle^^^^^^^^^^");
@@ -98,6 +100,7 @@ public class Driver
 
         System.out.println();
 
+        //create a square
         Square s = new Square(new Point(0.0, 0.0), new Point(10.0, 0.0), new Point(10.0, 10.0), new Point(0.0, 10.0));
         
         System.out.println("^^^^^^^^^^3. Square^^^^^^^^^^");
@@ -145,6 +148,7 @@ public class Driver
 
         System.out.println();
 
+        //create a circle
         Circle c = new Circle(new Point(2.0, 0.0), 2.0);
         
         System.out.println("^^^^^^^^^^4. Circle^^^^^^^^^^");
@@ -192,6 +196,7 @@ public class Driver
 
         System.out.println();
 
+        //create a complement of a circle
         Complement c_bar = new Complement(new Circle(new Point(2.0, 0.0), 2.0));
         
         System.out.println("^^^^^^^^^^5. Complement of a Circle^^^^^^^^^^");
@@ -239,6 +244,7 @@ public class Driver
 
         System.out.println();
 
+        //create an annulus by creating two circles with the same centre and taking intersection of complement of smaller circle with the bigger circle
         Circle c1 = new Circle(new Point(0.0, 0.0), 5.0);
         Circle c2 = new Circle(new Point(0.0, 0.0), 2.0);
         Intersection annulus = new Intersection(c1, new Complement(c2));
@@ -272,6 +278,7 @@ public class Driver
 
         System.out.println();
 
+        //create an lshape by taking union of two rectangles
         Rectangle r1 = new Rectangle(new Point(0.0, 0.0), new Point(0.0, 5.0), new Point(10.0, 5.0), new Point(10.0, 0.0));
         Rectangle r2 = new Rectangle(new Point(0.0, 0.0), new Point(0.0, 10.0), new Point(5.0, 10.0), new Point(5.0, 0.0));
         Union Lshape = new Union(r1, r2);
