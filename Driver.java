@@ -6,7 +6,7 @@ public class Driver
     {
         Triangle t = new Triangle(new Point(5.0, 0.0), new Point(-5.0, 0.0), new Point(0.0, 10.0));
         
-        System.out.println("1. Triangle");
+        System.out.println("^^^^^^^^^^1. Triangle^^^^^^^^^^");
         t.print();
         System.out.println("Test point : " + (new Point(-1.0, -1.0)).toString());
         printMsg(t.contains(new Point(-1.0, -1.0)));
@@ -53,7 +53,7 @@ public class Driver
 
         Rectangle r = new Rectangle(new Point(0.0, 0.0), new Point(10.0, 0.0), new Point(10.0, 5.0), new Point(0.0, 5.0));
         
-        System.out.println("2. Rectangle");
+        System.out.println("^^^^^^^^^^2. Rectangle^^^^^^^^^^");
         r.print();
         System.out.println("Test point : " + (new Point(0.0, 6.0)).toString());
         printMsg(r.contains(new Point(0.0, 6.0)));
@@ -100,7 +100,7 @@ public class Driver
 
         Square s = new Square(new Point(0.0, 0.0), new Point(10.0, 0.0), new Point(10.0, 10.0), new Point(0.0, 10.0));
         
-        System.out.println("3. Square");
+        System.out.println("^^^^^^^^^^3. Square^^^^^^^^^^");
         s.print();
         System.out.println("Test point : " + (new Point(6.0, -1.0)).toString());
         printMsg(s.contains(new Point(6.0, -1.0)));
@@ -147,7 +147,7 @@ public class Driver
 
         Circle c = new Circle(new Point(2.0, 0.0), 2.0);
         
-        System.out.println("4. Circle");
+        System.out.println("^^^^^^^^^^4. Circle^^^^^^^^^^");
         c.print();
         System.out.println("Test point : " + (new Point(6.0, -1.0)).toString());
         printMsg(c.contains(new Point(6.0, -1.0)));
@@ -194,7 +194,7 @@ public class Driver
 
         Complement c_bar = new Complement(new Circle(new Point(2.0, 0.0), 2.0));
         
-        System.out.println("5. Complement of a Circle");
+        System.out.println("^^^^^^^^^^5. Complement of a Circle^^^^^^^^^^");
         c_bar.print();
         System.out.println("Test point : " + (new Point(6.0, -1.0)).toString());
         printMsg(c_bar.contains(new Point(6.0, -1.0)));
@@ -243,7 +243,7 @@ public class Driver
         Circle c2 = new Circle(new Point(0.0, 0.0), 2.0);
         Intersection annulus = new Intersection(c1, new Complement(c2));
         
-        System.out.println("6. Annulus");
+        System.out.println("^^^^^^^^^^6. Annulus^^^^^^^^^^");
         annulus.print();
         System.out.println("Test point : " + (new Point(0.0, 0.0)).toString());
         printMsg(annulus.contains(new Point(0.0, 0.0)));
@@ -276,7 +276,7 @@ public class Driver
         Rectangle r2 = new Rectangle(new Point(0.0, 0.0), new Point(0.0, 10.0), new Point(5.0, 10.0), new Point(5.0, 0.0));
         Union Lshape = new Union(r1, r2);
 
-        System.out.println("7. L-shaped Region");
+        System.out.println("^^^^^^^^^^7. L-shaped Region^^^^^^^^^^");
         Lshape.print();
         System.out.println("Test point : " + (new Point(6.0, 6.0)).toString());
         printMsg(Lshape.contains(new Point(6.0, 6.0)));
